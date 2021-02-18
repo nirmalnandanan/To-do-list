@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.5rem;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  background: url(./background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 60vh; */
+  height: auto;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.formcontainer {
+  max-width: 30rem;
+  width: 90vw;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.562);
+  /* box-shadow: 0px 0px 8px rgba(189, 188, 188, 0.521); */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.formcontainer h2 {
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 75px;
+}
+.alert {
+  display: block;
+  visibility: hidden;
+  /* border: 1px solid green; */
+  height: 2rem;
+  padding: 8px 25px;
+  font-size: 1.05rem;
+  border-radius: 15px;
+  /* color: green; */
+  /* background-color: rgba(14, 167, 14, 0.185); */
+  margin: 7px 0 2px 0;
+}
+.alert-notokay {
+  visibility: visible;
+  color: red;
+}
+.alert-okay {
+  visibility: visible;
+  color: green;
+}
+.input {
+  margin: 10px 0 15px 0;
+  /* border: 1px solid red; */
+  max-width: 25rem;
+  width: 76vw;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.textBox {
+  height: 2rem;
+  flex: 1 0 0;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background-color: rgb(235, 252, 252);
+}
+.textBox::placeholder {
+  padding-left: 1.2rem;
+  color: rgba(112, 111, 111, 0.616);
+}
+.textBox:focus {
+  /* background-color: red; */
+  border: transparent;
+}
+input[type="text"],
+select {
+  padding-left: 1.2rem;
+}
+.inputBtn {
+  padding: 0 0.7rem;
+  padding-right: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: rgb(92, 223, 223);
+  font-family: "rancho", sans-serif;
+  font-size: 1.1rem;
+}
+.textBox,
+.inputBtn {
+  border: transparent;
+}
+.inputBtn:hover {
+  background-color: rgb(0, 226, 226);
+  color: white;
+}
+
+.listcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 24rem;
+  width: 73vw;
+  /* border: 1px solid blue; */
+  margin-bottom: 70px;
+  font-size: 100px;
+  font-family: "Philosopher", sans-serif;
+  color: rgba(0, 0, 0, 0.671);
+  visibility: hidden;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 24rem;
+  width: 73vw;
+}
+.showcontainer {
+  visibility: visible;
+}
+.list {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* border: 1px solid violet; */
+  /* border: 1px solid transparent; */
+  width: 100%;
+  height: auto;
+  min-height: 2.1rem;
+  margin: 3px 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.list:hover {
+  background-color: rgba(255, 255, 255, 0.692);
+  box-shadow: 0 0px 5px rgba(75, 74, 74, 0.2);
+}
+.listItem {
+  font-size: 1.2rem;
+  flex: 1;
+  padding: 5px 5px;
+}
+.listItem p {
+  width: 100%;
+}
+.checkBox {
+  /* padding: 5px 10px; */
+  margin: 0 1.2rem;
+  color: black;
+  border-radius: 50%;
+}
+
+.btn-container {
+  /* border: 1px solid aqua; */
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0 5px;
+  margin-right: 1.2rem;
+}
+.edit-btn {
+  color: rgb(29, 165, 255);
+  margin-right: 0.8rem;
+}
+.edit-btn:hover {
+  text-shadow: 0 0px 15px rgba(29, 165, 255, 0.596);
+}
+.delete-btn {
+  color: red;
+}
+.delete-btn:hover {
+  text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.712);
+}
+.delete-btn,
+.edit-btn {
+  border: none;
+  background-color: transparent;
+}
+.clearBtn {
+  margin-top: 30px;
+  height: 2rem;
+  border-radius: 1rem;
+  border: transparent;
+  font-size: 1.1rem;
+  background-color: rgba(255, 0, 0, 0.068);
+  font-family: "Rancho", sans-serif;
+  font-size: 20px;
+}
+.clearBtn:hover {
+  background-color: rgba(255, 0, 0, 0.747);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  body {
+    background: url(./bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .formcontainer h2 {
+    font-size: 3.1rem;
+  }
+}
